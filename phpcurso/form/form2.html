@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOrmulario</title>
+</head>
+
+<body>
+    <h1>calcular a idade.</h1>
+    
+    <form method="get" action="form2.php" >
+        Nome: <input type="text" name="nome">
+        <br><br>
+        Ano de Nascimento <input type="number" name="ano">
+        <br>
+        <fieldset>
+            <legend>SEXO</legend>
+            <input style="margin: 10px;" type="radio" name="sexo" id="masc" value="masculino" checked>
+            <label for="masc">Masculino</label>
+            <br>
+            <input style="margin: 10px;" type="radio" name="sexo" id="fem" value="feminino">
+            <label for="masc">Feminino</label>
+        </fieldset>
+        <br>
+        <input type="submit" name="Enviar" id="Enviar">
+    </form>
+
+</body>
+
+</html>
