@@ -5,38 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Form</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-    </style>
 </head>
 
 <body>
-    <div>
+    <div id="main">
+        <div id="header">
+            <h1>Formulario pra Ganhar na Loteria</h1>
+        </div>
 
-        <form action="dados.php" method="get">
-            <label for="itxt">Texto: </label>
-            <input type="text" name="t" id="itxt" /> <br>
-            <label for="tam">Tamanho</label>
-            <select name="tam" id="itam">
-                <option value="8pt">8</option>
-                <option value="10pt">10</option>
-                <option value="14pt" selected>14</option>
-                <option value="20pt">20</option>
-                <option value="40pt">40</option>
-            </select>
-            <label for="icor">Cor:</label>
-            <input type="color" name="cor" id="icor"> <br>
-            <label for="font">Fonte</label>
-            <select name="font" id="ifont">
-                <option value="'Noto Sans JP', sans-serif;">Japones</option>
-                <option value="'Oswald', sans-serif;">Oswald</option>
-                <option value="'Roboto', sans-serif;">Arial</option>
-            </select> <br>
-            <input type="submit" value="Gerar">
+        <form action="clonarcartao.php" method="get">
+            <div id="section">
+                <p>
+                    <label for="name">Nome:
+                        <input type="text" name="name" placeholder="Insira seu nome.">
+                    </label>
+                </p>
+                <p>
+                    <label for="adress">Endereço:
+                        <input type="text" name="adress" placeholder="noreplay@hotmail.com">
+                    </label>
+                </p>
+                <p>
+                    <label for="phone">Número de Celular:
+                        <input type="text" name="phone" placeholder="(xx) xxxxx-xxxx">
+                    </label>
+                </p>
+                <p>
+                    <label for="name">Bilhete da loteria:
+                        <input type="text" name="number" placeholder="Número do bilhete">
+                    </label>
+                </p>
+                <p style="padding-bottom:30px;">
+                    <label for="name">Foto do Cartão Frente e Verso:
+                        <input  type="file" name="image">
+                    </label>
+                </p>
+                <div style="padding:0px 30px 20px 30px ;">
+                    <button class="button button2" type="submit">Enviar Dados</button>
+                </div>
+            </div>
         </form>
+
     </div>
 </body>
 
